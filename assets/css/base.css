@@ -1,0 +1,69 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --blue-color: #14b9d5;
+    --green-color: #1bbc9b;
+    --pink-color: #f76570;
+    --violet-color: #ba71da;
+    --yellow-color: #ffd205;
+    --header-height: 104px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.underline {
+    position: relative;
+    z-index: 0;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    left: 0;
+    right: 0;
+    bottom: 14%;
+    z-index: -1;
+}
+
+.underline.violet::after {
+    background-color: var(--violet-color);
+}
+
+.underline.green::after {
+    background-color: var(--green-color);
+}
+
+.underline.pink::after {
+    background-color: var(--pink-color);
+}
+
+.underline.blue::after {
+    background-color: var(--blue-color);
+}
+
+.background--yellow {
+    background-color: var(--yellow-color);
+}
+
+.background--pink {
+    background-color: var(--pink-color);
+}
+
+.background--violet {
+    background-color: var(--violet-color);
+}
